@@ -56,7 +56,10 @@ app.register(fastifyJwt, {
   secret: process.env.JWT_SECRET as string,
 })
 
-app.register(fastifyCors)
+app.register(fastifyCors, {
+  origin: process.env.WEB_APP_URL || 'http://localhost:5173',
+  credentials: true,
+})
 
 /** Routes */
 // auth
