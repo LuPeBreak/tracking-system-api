@@ -21,6 +21,7 @@
     "fastify": "^4.28.0",
     "fastify-plugin": "^4.5.1",
     "fastify-type-provider-zod": "^2.0.0",
+    "tsc-alias": "^1.8.10",
     "zod": "^3.23.8"
   },
   "prisma": {
@@ -28,32 +29,36 @@
   },
   "prettier": {
     "printWidth": 80,
-    "tabWidth":2,
-    "useTabs":false,
-    "semi":false,
-    "singleQuote":true,
-    "quoteProps":"as-needed",
-    "jsxSingleQuote":false,
-    "trailingComma":"es5",
-    "bracketSpacing":true,
-    "arrowParens":"always",
-    "endOfLine":"auto",
-    "bracketSameLine":false
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "endOfLine": "auto",
+    "bracketSameLine": false
   },
   "eslintConfig": {
-    "extends": ["@rocketseat/eslint-config/node"],
-    "plugins": ["simple-import-sort"],
+    "extends": [
+      "@rocketseat/eslint-config/node"
+    ],
+    "plugins": [
+      "simple-import-sort"
+    ],
     "rules": {
       "simple-import-sort/imports": "error"
     }
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.2.2",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
     "@faker-js/faker": "^8.4.1",
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.14.9",
     "dotenv-cli": "^7.4.2",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
     "prettier": "^3.3.2",
     "prisma": "5.12.1",
     "ts-node": "^10.9.2",
