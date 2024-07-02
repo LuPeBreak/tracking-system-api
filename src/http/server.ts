@@ -74,6 +74,6 @@ app.register(getVehicles)
 app.register(updateVehicle)
 app.register(updateVehicleGeolocation)
 
-app.listen({ port: Number(process.env.SERVER_PORT) || 3000 }).then(() => {
+app.listen({ host:'0.0.0.0', port: Number(process.env.SERVER_PORT) || 3333 }).then(() => {
   console.log('Server is Running!')
 })
