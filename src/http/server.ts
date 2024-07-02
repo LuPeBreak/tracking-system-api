@@ -57,8 +57,8 @@ app.register(fastifyJwt, {
 })
 
 app.register(fastifyCors, {
-  origin: process.env.WEB_APP_URL || 'http://localhost:5173',
-  credentials: true,
+  // origin: process.env.WEB_APP_URL || 'http://localhost:5173',
+  // credentials: true,
 })
 
 /** Routes */
